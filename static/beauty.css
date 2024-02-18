@@ -1,0 +1,23 @@
+:root {
+	--color: MidnightBlue;
+	--background-color: Asure;
+	--border-color: LightSteelBlue;
+	--border-size: 3px;
+	--accent: Crimson;
+	--background-color-alternate: LavenderBlush;
+
+	background-color: var(--background-color);
+	color: var(--color);
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #242936;
+		--color: #5ccfe6;
+		--accent: #dfbfff;
+		--background-color-alternate: #1f2430;
+
+		color-scheme: dark;
+	}
+}
