@@ -14,5 +14,5 @@ export const translations: Record<Case | GenderOrNumber | ExampleType, string> =
 		'definite-adjective': 'Bestimmte Artikel, Adjektiv, Substantiv',
 		'indefinite-adjective': 'Unbestimmte Artikel, Adjektiv, Substantiv',
 		'negative-indefinite-adjective':
-			'Negativform unbestimmte Artikel, Adjektiv, Substantiv'
+			'Negativform unbestimmte Artikel, Adjektiv, Substantiv',
 	}

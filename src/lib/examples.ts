@@ -1,6 +1,6 @@
 import type { Example } from './constants'
 const adjectiveBase = 'nett'
-const noumMasculine = 'Mann'
+const nounMasculine = 'Mann'
 const nounNeuter = 'Kind'
 const nounFeminine = 'Frau'
 const nounPlural = 'Leute'
@@ -12,7 +12,7 @@ const nominativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'd',
 		articleEnding: 'er',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'indefinite',
@@ -20,7 +20,7 @@ const nominativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'ein',
 		articleEnding: '',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'negative-indefinite',
@@ -28,7 +28,7 @@ const nominativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'kein',
 		articleEnding: '',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'definite-adjective',
@@ -38,7 +38,7 @@ const nominativeMasculine: Example[] = [
 		articleEnding: 'er',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -48,7 +48,7 @@ const nominativeMasculine: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'er',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -58,8 +58,8 @@ const nominativeMasculine: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'er',
-		nounBase: noumMasculine
-	}
+		nounBase: nounMasculine,
+	},
 ]
 
 const nominativeNeuter: Example[] = [
@@ -69,7 +69,7 @@ const nominativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'd',
 		articleEnding: 'as',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'indefinite',
@@ -77,7 +77,7 @@ const nominativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'ein',
 		articleEnding: '',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'negative-indefinite',
@@ -85,7 +85,7 @@ const nominativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'kein',
 		articleEnding: '',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'definite-adjective',
@@ -95,7 +95,7 @@ const nominativeNeuter: Example[] = [
 		articleEnding: 'as',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -105,7 +105,7 @@ const nominativeNeuter: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'es',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -115,8 +115,8 @@ const nominativeNeuter: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'es',
-		nounBase: nounNeuter
-	}
+		nounBase: nounNeuter,
+	},
 ]
 
 const nominativeFeminine: Example[] = [
@@ -126,7 +126,7 @@ const nominativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'd',
 		articleEnding: 'ie',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'indefinite',
@@ -134,7 +134,7 @@ const nominativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'ein',
 		articleEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'negative-indefinite',
@@ -142,7 +142,7 @@ const nominativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'kein',
 		articleEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'definite-adjective',
@@ -152,7 +152,7 @@ const nominativeFeminine: Example[] = [
 		articleEnding: 'ie',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -162,7 +162,7 @@ const nominativeFeminine: Example[] = [
 		articleEnding: 'e',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -172,8 +172,8 @@ const nominativeFeminine: Example[] = [
 		articleEnding: 'e',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounFeminine
-	}
+		nounBase: nounFeminine,
+	},
 ]
 
 const nominativePlural: Example[] = [
@@ -183,7 +183,7 @@ const nominativePlural: Example[] = [
 		genderOrNumber: 'plural',
 		articleBase: 'd',
 		articleEnding: 'ie',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'indefinite',
@@ -191,7 +191,7 @@ const nominativePlural: Example[] = [
 		genderOrNumber: 'plural',
 		articleBase: '-',
 		articleEnding: '',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'negative-indefinite',
@@ -199,7 +199,7 @@ const nominativePlural: Example[] = [
 		genderOrNumber: 'plural',
 		articleBase: 'kein',
 		articleEnding: 'e',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'definite-adjective',
@@ -209,7 +209,7 @@ const nominativePlural: Example[] = [
 		articleEnding: 'ie',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -219,7 +219,7 @@ const nominativePlural: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -229,8 +229,8 @@ const nominativePlural: Example[] = [
 		articleEnding: 'e',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounPlural
-	}
+		nounBase: nounPlural,
+	},
 ]
 
 const accusativeMasculine: Example[] = [
@@ -240,7 +240,7 @@ const accusativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'd',
 		articleEnding: 'en',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'indefinite',
@@ -248,7 +248,7 @@ const accusativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'ein',
 		articleEnding: 'en',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'negative-indefinite',
@@ -256,7 +256,7 @@ const accusativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'kein',
 		articleEnding: 'en',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'definite-adjective',
@@ -266,7 +266,7 @@ const accusativeMasculine: Example[] = [
 		articleEnding: 'en',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -276,7 +276,7 @@ const accusativeMasculine: Example[] = [
 		articleEnding: 'en',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -286,8 +286,8 @@ const accusativeMasculine: Example[] = [
 		articleEnding: 'en',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: noumMasculine
-	}
+		nounBase: nounMasculine,
+	},
 ]
 
 const accusativeNeuter: Example[] = [
@@ -297,7 +297,7 @@ const accusativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'd',
 		articleEnding: 'as',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'indefinite',
@@ -305,7 +305,7 @@ const accusativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'ein',
 		articleEnding: '',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'negative-indefinite',
@@ -313,7 +313,7 @@ const accusativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'kein',
 		articleEnding: '',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'definite-adjective',
@@ -323,7 +323,7 @@ const accusativeNeuter: Example[] = [
 		articleEnding: 'as',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -333,7 +333,7 @@ const accusativeNeuter: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'es',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -343,8 +343,8 @@ const accusativeNeuter: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'es',
-		nounBase: nounNeuter
-	}
+		nounBase: nounNeuter,
+	},
 ]
 
 const accusativeFeminine: Example[] = [
@@ -354,7 +354,7 @@ const accusativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'd',
 		articleEnding: 'ie',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'indefinite',
@@ -362,7 +362,7 @@ const accusativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'ein',
 		articleEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'negative-indefinite',
@@ -370,7 +370,7 @@ const accusativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'kein',
 		articleEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'definite-adjective',
@@ -380,7 +380,7 @@ const accusativeFeminine: Example[] = [
 		articleEnding: 'ie',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -390,7 +390,7 @@ const accusativeFeminine: Example[] = [
 		articleEnding: 'e',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -400,8 +400,8 @@ const accusativeFeminine: Example[] = [
 		articleEnding: 'e',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounFeminine
-	}
+		nounBase: nounFeminine,
+	},
 ]
 
 const accusativePlural: Example[] = [
@@ -411,7 +411,7 @@ const accusativePlural: Example[] = [
 		genderOrNumber: 'plural',
 		articleBase: 'd',
 		articleEnding: 'ie',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'indefinite',
@@ -419,7 +419,7 @@ const accusativePlural: Example[] = [
 		genderOrNumber: 'plural',
 		articleBase: '-',
 		articleEnding: '',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'negative-indefinite',
@@ -427,7 +427,7 @@ const accusativePlural: Example[] = [
 		genderOrNumber: 'plural',
 		articleBase: 'kein',
 		articleEnding: 'e',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'definite-adjective',
@@ -437,7 +437,7 @@ const accusativePlural: Example[] = [
 		articleEnding: 'ie',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -447,7 +447,7 @@ const accusativePlural: Example[] = [
 		articleEnding: '',
 		adjectiveBase,
 		adjectiveEnding: 'e',
-		nounBase: nounPlural
+		nounBase: nounPlural,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -457,8 +457,8 @@ const accusativePlural: Example[] = [
 		articleEnding: 'e',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounPlural
-	}
+		nounBase: nounPlural,
+	},
 ]
 
 const dativeMasculine: Example[] = [
@@ -468,7 +468,7 @@ const dativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'd',
 		articleEnding: 'em',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'indefinite',
@@ -476,7 +476,7 @@ const dativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'ein',
 		articleEnding: 'em',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'negative-indefinite',
@@ -484,7 +484,7 @@ const dativeMasculine: Example[] = [
 		genderOrNumber: 'masculine',
 		articleBase: 'kein',
 		articleEnding: 'em',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'definite-adjective',
@@ -494,7 +494,7 @@ const dativeMasculine: Example[] = [
 		articleEnding: 'em',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -504,7 +504,7 @@ const dativeMasculine: Example[] = [
 		articleEnding: 'em',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: noumMasculine
+		nounBase: nounMasculine,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -514,8 +514,8 @@ const dativeMasculine: Example[] = [
 		articleEnding: 'em',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: noumMasculine
-	}
+		nounBase: nounMasculine,
+	},
 ]
 
 const dativeNeuter: Example[] = [
@@ -525,7 +525,7 @@ const dativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'd',
 		articleEnding: 'em',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'indefinite',
@@ -533,7 +533,7 @@ const dativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'ein',
 		articleEnding: 'em',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'negative-indefinite',
@@ -541,7 +541,7 @@ const dativeNeuter: Example[] = [
 		genderOrNumber: 'neuter',
 		articleBase: 'kein',
 		articleEnding: 'em',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'definite-adjective',
@@ -551,7 +551,7 @@ const dativeNeuter: Example[] = [
 		articleEnding: 'em',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -561,7 +561,7 @@ const dativeNeuter: Example[] = [
 		articleEnding: 'em',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounNeuter
+		nounBase: nounNeuter,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -571,8 +571,8 @@ const dativeNeuter: Example[] = [
 		articleEnding: 'em',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounNeuter
-	}
+		nounBase: nounNeuter,
+	},
 ]
 
 const dativeFeminine: Example[] = [
@@ -582,7 +582,7 @@ const dativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'd',
 		articleEnding: 'er',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'indefinite',
@@ -590,7 +590,7 @@ const dativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'ein',
 		articleEnding: 'er',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'negative-indefinite',
@@ -598,7 +598,7 @@ const dativeFeminine: Example[] = [
 		genderOrNumber: 'feminine',
 		articleBase: 'kein',
 		articleEnding: 'er',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'definite-adjective',
@@ -608,7 +608,7 @@ const dativeFeminine: Example[] = [
 		articleEnding: 'er',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'indefinite-adjective',
@@ -618,7 +618,7 @@ const dativeFeminine: Example[] = [
 		articleEnding: 'er',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounFeminine
+		nounBase: nounFeminine,
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -628,8 +628,8 @@ const dativeFeminine: Example[] = [
 		articleEnding: 'er',
 		adjectiveBase,
 		adjectiveEnding: 'en',
-		nounBase: nounFeminine
-	}
+		nounBase: nounFeminine,
+	},
 ]
 
 const dativePlural: Example[] = [
@@ -640,7 +640,7 @@ const dativePlural: Example[] = [
 		articleBase: 'd',
 		articleEnding: 'en',
 		nounBase: nounPlural,
-		nounEnding: 'n'
+		nounEnding: 'n',
 	},
 	{
 		type: 'indefinite',
@@ -649,7 +649,7 @@ const dativePlural: Example[] = [
 		articleBase: '-',
 		articleEnding: '',
 		nounBase: nounPlural,
-		nounEnding: 'n'
+		nounEnding: 'n',
 	},
 	{
 		type: 'negative-indefinite',
@@ -658,7 +658,7 @@ const dativePlural: Example[] = [
 		articleBase: 'kein',
 		articleEnding: 'en',
 		nounBase: nounPlural,
-		nounEnding: 'n'
+		nounEnding: 'n',
 	},
 	{
 		type: 'definite-adjective',
@@ -669,7 +669,7 @@ const dativePlural: Example[] = [
 		adjectiveBase,
 		adjectiveEnding: 'en',
 		nounBase: nounPlural,
-		nounEnding: 'n'
+		nounEnding: 'n',
 	},
 	{
 		type: 'indefinite-adjective',
@@ -680,7 +680,7 @@ const dativePlural: Example[] = [
 		adjectiveBase,
 		adjectiveEnding: 'en',
 		nounBase: nounPlural,
-		nounEnding: 'n'
+		nounEnding: 'n',
 	},
 	{
 		type: 'negative-indefinite-adjective',
@@ -691,8 +691,8 @@ const dativePlural: Example[] = [
 		adjectiveBase,
 		adjectiveEnding: 'en',
 		nounBase: nounPlural,
-		nounEnding: 'n'
-	}
+		nounEnding: 'n',
+	},
 ]
 
 export const examples: Example[] = nominativeMasculine.concat(
@@ -706,5 +706,5 @@ export const examples: Example[] = nominativeMasculine.concat(
 	dativeMasculine,
 	dativeNeuter,
 	dativeFeminine,
-	dativePlural
+	dativePlural,
 )

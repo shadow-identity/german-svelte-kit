@@ -6,7 +6,7 @@
 		type Case,
 		type ExampleType,
 		caseNames,
-		exampleTypes
+		exampleTypes,
 	} from '$lib/constants'
 
 	import { translations } from '$lib/translations'
@@ -22,18 +22,21 @@
 	const updateExampleContent = (
 		event: Event & {
 			currentTarget: HTMLInputElement
-		}
+		},
 	) => {
 		const exampleType = event.currentTarget.name as ExampleType
 		const visible = event.currentTarget.checked
 		if (!visible) examplesByType.delete(exampleType)
 		else {
-			examplesByType.set(exampleType, allExamplesByType.get(exampleType) ?? [])
+			examplesByType.set(
+				exampleType,
+				allExamplesByType.get(exampleType) ?? [],
+			)
 			examplesByType = toSortedByType(examplesByType)
 		}
 		byCase = groupBy(
 			[...examplesByType.values()].flat(),
-			(example) => example.case
+			(example) => example.case,
 		)
 	}
 </script>
