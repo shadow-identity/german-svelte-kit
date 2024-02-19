@@ -1,6 +1,6 @@
 export const groupBy = <K, V>(
 	items: V[],
-	callbackfn: (item: V, index: number) => K
+	callbackfn: (item: V, index: number) => K,
 ): Map<K, V[]> => {
 	const map = new Map<K, V[]>()
 	let k = 0

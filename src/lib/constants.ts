@@ -10,7 +10,7 @@ export const exampleTypes = [
 	'negative-indefinite',
 	'definite-adjective',
 	'indefinite-adjective',
-	'negative-indefinite-adjective'
+	'negative-indefinite-adjective',
 ] as const
 
 export type Example = {
