@@ -10,7 +10,7 @@
 	import { translations } from '$lib/translations'
 	import { onMount } from 'svelte'
 
-	const wordsPromise = getAllWords()
+	let wordsPromise = getAllWords()
 	let gender: Gender
 	let root = ''
 	let plural: string
@@ -26,6 +26,7 @@
 
 	const submit = () => {
 		setWord({ gender, root, plural, translation })
+		wordsPromise = getAllWords()
 	}
 
 	$: setSelection({ showGender: genderRepresentation })
@@ -215,13 +216,13 @@
 	}
 
 	dt[data-gender='masculine']::before {
-		color: red;
-	}
-	dt[data-gender='neuter']::before {
 		color: blue;
 	}
-	dt[data-gender='feminine']::before {
+	dt[data-gender='neuter']::before {
 		color: green;
+	}
+	dt[data-gender='feminine']::before {
+		color: red;
 	}
 
 	dt[data-gender-representation='color'] x-article {
