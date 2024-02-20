@@ -41,6 +41,7 @@
 	}
 </script>
 
+<a href="/words">{translations.ui.wordsLearning}</a>
 <x-wrapper>
 	<x-examples-type>
 		{#each exampleTypes as exampleType}

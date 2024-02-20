@@ -12,8 +12,7 @@
 		{#each exampleGroup as example}
 			<x-example>
 				{example.articleBase}<b>{example.articleEnding}</b>
-				{example.adjectiveBase ?? ''}
-				<b>
+				{example.adjectiveBase ?? ''}<b>
 					{example.adjectiveEnding ?? ''}
 				</b>
 				{example.nounBase}
