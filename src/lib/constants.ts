@@ -1,4 +1,5 @@
-export type GenderOrNumber = 'masculine' | 'neuter' | 'feminine' | 'plural'
+export type Gender = 'masculine' | 'neuter' | 'feminine'
+export type GenderOrNumber = Gender | 'plural'
 export type Case = (typeof caseNames)[number]
 export type ExampleType = (typeof exampleTypes)[number]
 
